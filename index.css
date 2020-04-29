@@ -1,0 +1,107 @@
+
+body {
+    padding-top: 56px;
+  }
+  
+  .carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+   .move{
+    color: rgba(194, 182, 18, 0.733);
+    animation: move 5s ease-in-out 1s infinite reverse backwards;
+    font-family: 'Pacifico', cursive;
+  }
+  @keyframes move{
+     0%{ transform: translateX(-200px);color:blue; font-size: smaller;}
+     25%{ transform: translate(-200px);color:rgb(179, 168, 27);}
+     75%{ transform: translate(800px);color:rgb(58, 199, 164); font-size: smaller;}
+     100%{ transform: translateX(300px);color:gold; }
+     
+  }
+  .para::first-letter{
+    color: red;
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    div .container-fluid{
+      display:grid;
+      grid-template-columns: auto;
+    }
+    .container,header{
+      width:100%;
+    }
+    div .carousel-inner {
+      display: grid;
+      grid-template-columns: auto;
+      margin-top: 50px;
+      height: 60vh;  
+      max-height: 300px;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  
+   .move{
+     font-size: smaller;
+
+   }
+   @keyframes move{
+    0%{ transform: translateX(-10px);color:blue;font-size: smaller; }
+    25%{ transform: translate(-10px);color:rgb(179, 168, 27);}
+    75%{ transform: translate(200px);color:rgb(58, 199, 164);font-size: smaller;}
+    100%{ transform: translateX(50px);color:gold; }
+    
+ }
+ 
+  .text1{
+    font-size: smaller;
+    }
+  }
+  .text2{
+    color:black;
+    text-shadow: 3px 3px 2px gold;  
+  }
+  .word1{
+    animation:word1 4s ease 2s infinite normal;
+  }
+  .word2{
+    animation:word2 4s ease 2s infinite normal;
+  }
+  @keyframes word1{
+    0%{transfom:rotate(180deg);color:lightblue;font-size:larger;}
+    100%{transfom:rotate(180deg);color:rgb(177, 221, 18);}
+    
+  }
+  @keyframes word2{
+    0%{transfom:rotate(90deg);color:lightblue;font-size:larger;}
+    100%{transfom:rotate(180deg);color:rgb(177, 221, 18);}
+    
+  }
+  .jumbotron{
+    background-image: url('picture/photo1\ \(10\).jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index:-1;
+    height: 700px;
+    width: 100%;
+  }
+.covid-19{
+  width:100px;
+  height:100px;
+}
+
+  
